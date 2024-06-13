@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    
+}
+img{
+    width: 100%;
+    border-radius: 15px;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style-type: none;
+}
+button{
+    cursor:pointer;
+    background-color: darkorange;
+    padding: 5px;
+    border: solid 2px darkorange;
+    border-radius: 10px;
+}
+
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: darkorange;
+    z-index: 1000;
+    height: 130px;
+    width: 100%;
+   
+}
+.logo{
+    /* margin: auto; */
+    width: 10%;
+    padding-left: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+.logo h2{
+    color: rgb(88, 85, 85);
+    font-size: 30px;
+}
+.barramenu{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu{
+    width:90%;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; 
+    font-size: 18px;
+    justify-content: center;
+  
+}
+.redes{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sociales{
+    width:70%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;  
+}
+.sociales li a{
+    color: black;
+}
+.sociales li a :hover, .text3 a:hover{
+    color: white;
+}
+.boton{
+    color:white;
+    font-family:"Bebas Neue", sans-serif ;
+    padding: 12px;
+    background-color: black;
+    border-radius: 40px 40px 40px 40px;
+   
+}
+.boton:hover{
+    background-color: white;
+    border-radius: 40px 40px 40px 40px;
+    color: black;
+}
+.opciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+ul.opciones li a{
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    color:rgb(0, 0, 0);
+    padding: 12px;
+    margin: 11px;  
+}
+ul.opciones li a:hover{
+    border-radius: 10px;
+    transform: translateY(2%);
+    text-decoration: underline;
+}
+.imagenfondo{
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.imagenfondo ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+
+}
+.imagenfondo li{
+    list-style: none;
+    width: 100%;
+}
+.imagenfondo img{
+    width: 100%;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}
+
+
+/*-- NOSOTROS--*/
+.cajanosotros{
+    background-image: url(https://images.pexels.com/photos/13313296/pexels-photo-13313296.jpeg);
+    background-size: cover ;
+    background-position: center;
+}
+.Nosotros{
+    margin: auto;
+    width: 75%;
+    padding: 100px;
+    scroll-margin-top: 60px;
+}
+.titulonosotros{
+    color:darkorange;
+    font-family: "DM Serif Display", serif;
+    font-size: 40px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.us{
+    width: 95%;
+    display: flex;
+
+}
+.text{
+    font-size: 20px;
+    margin-top: 40px;
+    color: rgb(0, 0, 0);
+   
+}
+.bot-nos{
+    margin-top: 105px;
+  
+   
+}
+.bot-guia{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.bot-guia li a{
+    font-family:"Bebas Neue", sans-serif ;
+    border-radius: 20px;
+
+}
+.guia{
+    border: solid 2px red;
+    color: red;
+    padding: 20px;
+   
+}
+.guia:hover{
+    box-shadow: 0px 0px 20px red;
+    background-color: red;
+    color: white;
+}
+.rutas{
+    border: solid 2px green;
+    color: green;
+    padding: 20px;
+}
+.rutas:hover{
+    box-shadow: 0px 0px 20px green;
+    text-shadow: 0px 0px 15px green;
+    background-color: green;
+    color: white;
+}
+.consejos{
+    border: solid 2px darkorange ;
+    color: darkorange;
+    padding: 20px;
+}
+.consejos:hover{
+    box-shadow: 0px 0px 20px darkorange;
+    text-shadow: 0px 0px 15px darkorange;
+    background-color: darkorange;
+    color: white;
+}
+.video{
+    width: 5%;
+}
+.nos-video{
+    height: 500px;
+    box-shadow: 0px 0px 18px;
+    border-radius: 10px;
+}
+/*--termina nosotros--*/
+
+
+/*--LUGARES--*/
+.Título{
+    background-color: darkorange;
+    padding: 20px;
+    margin-top: 30px;
+    scroll-margin-top: 130px;
+    font-size: 35px;
+    
+  
+  
+}
+.Título h1{
+    margin: 10px;
+    font-family: "DM Serif Display", serif;  
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+    
+}
+
+p{
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:black;
+  font-size: 17px;
+}
+.cajalugares{
+    background-image: url(https://images.pexels.com/photos/2760856/pexels-photo-2760856.jpeg) ;
+    background-size: cover ;
+    background-position: center;
+    
+    
+}
+.fondolugares{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.sightseeingpass.com/images/pages/cities/new-york/city-wide/travel-tips/hero.jpg);
+    background-size: cover ;
+    background-position: center;
+    padding: 20px;
+
+}
+.Lugares{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.titulo-lug{
+    margin-top: 50px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.parrafo-lug{
+    text-align: justify;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+}
+.galery-lugares{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 20px; */
+    width: 100%; 
+}
+
+section.galery-lugares article h2{
+    text-shadow: 0px 0px 8px white;
+}
+section.galery-lugares article{
+    background-color: rgba(252, 254, 255, 0.301);
+    width: 20%;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgb(255, 248, 248);
+    transition: all 400ms ease;
+}
+section.galery-lugares article:hover{
+    /* box-shadow: 5px 5px 20px rgba(0,0,0,3); */
+    box-shadow: 0px 0px 50px rgb(255, 152, 27);
+    transform: translateY(-3%);
+}
+.vermas{
+    list-style: none;
+    padding: 10px;
+    color: black;
+    background-color: darkorange;
+    border-radius: 10px;
+    font-family:"Bebas Neue", sans-serif;
+   
+}
+.vermas:hover{
+    color: white;
+    box-shadow: 2px 0px 0px black;
+}
+
+/*--termina lugares--*/
+
+
+/*--RESTAURANTES--*/
+.ResNY{
+    background-color: darkorange;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    scroll-margin-top: 130px;
+   
+}
+.fondorestau{
+    /* margin-top: -230px;
+    margin-bottom: -230px; */
+    /* clip-path: inset(230px 0px 230px 0px) */
+    background-image:url(https://images.pexels.com/photos/19959070/pexels-photo-19959070/free-photo-of-blanco-y-negro-ciudad-restaurante-punto-de-referencia.jpeg);
+    background-size: cover ;
+    background-position: center;
+    
+    height: 470px;
+    text-align: center;
+    align-items: center;
+    padding: 180px;
+}
+
+
+.fondorestau h2{
+    color: white;
+    background-color: black;
+    margin: 15px;
+    font-size: 50px;
+}
+.fondorestau p{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    
+}
+.cajarestaurantes{
+    background-image: url(https://images.pexels.com/photos/18297099/pexels-photo-18297099/free-photo-of-blanco-y-negro-ciudad-coches-punto-de-referencia.jpeg) ;
+    background-size: cover ;
+    background-position: center;
+}
+.Restaurantes{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galery-restaurantes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 20px; */
+    width: 100%; 
+    
+}
+section.galery-restaurantes article h2{
+    text-shadow: 0px 0px 8px white;
+}
+section.galery-restaurantes article{
+    background-color: rgba(252, 254, 255, 0.397);
+    width: 20%;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 15px;
+   
+    box-shadow: 0px 1px 10px rgba(0,0,0,1);
+    transition: all 400ms ease;
+}
+section.galery-restaurantes article:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,3);
+    transform: translateY(-3%);
+}
+.ubi{
+    color: black;
+}
+.ubi:hover{
+    color:darkorange;
+}
+
+/*--FOOTER--*/
+.cajafooter{
+    margin: auto;
+    margin-top: 35px;
+    width: 100%;
+    background-color: darkorange;
+    border-radius: 20px 20px 0px 0px;
+    justify-content:space-around;
+    padding: 120px;
+}
+.footer{
+   width: 100%;
+   display: flex;
+   
+} 
+.footer section{
+    justify-content:  space-around;
+}
+.fo-redes{
+    width: 25%;
+}
+.fo-log{
+    display: flex;
+    margin-top: 20px;
+    
+    font-size: 30px;
+}
+.fo-log li a{
+    width: 50%;
+    justify-content: space-between;
+    padding: 30px;
+}
+.text2{
+    margin-top: 30px;
+}
+.text2 a{
+    color: black;
+    font-family:"Bebas Neue", sans-serif ;
+}
+.text3 a{
+    color: black;
+}
+.text2 a:hover{
+    color: white;
+}
+.Enlaces{
+width: 25%;
+}
+.servicio{
+    width: 25%;
+}
+.ofrecemos{
+    width: 25%;
+}
+.Subir{
+    position: fixed;
+    bottom: 30px;
+    right: 5px;
+    background-color: rgba(209, 122, 16, 0.74);
+    padding: 15px;
+    border-radius: 30px;
+    display: block;
+    z-index: 1000;
+}
+.Subir a{
+    text-decoration: none;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@media (min-width:768px){
+    .Lugares{
+        
+    }
+}
+
+
